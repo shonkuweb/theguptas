@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>The Gupta's | Landscape • Design • Development</title>
+  <meta name="description" content="Nature, thoughtfully transformed. Complete landscaping solutions from design to maintenance.">
+  <meta name="theme-color" content="#070a07">
+
+  <!-- Favicon using R2 logo -->
+  <link rel="icon" type="image/png" href="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png">
+  
+  <!-- Preload Critical Cloudflare R2 Assets -->
+  <link rel="preload" as="image" href="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-hero-bg.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png">
+  <link rel="preload" as="image" href="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-about-garden.jpg">
+  <link rel="preload" as="image" href="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-service-1.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond, Montserrat & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="The Gupta's">
+        <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's" class="logo-img" width="160" height="72">
+      </a>
+
+      <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Out Drawer Navigation -->
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true">
+    <div class="nav-drawer-backdrop" id="nav-backdrop"></div>
+    <div class="nav-drawer-panel">
+      <div class="drawer-header">
+        <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's" class="drawer-logo" width="135">
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <ul class="drawer-nav-list">
+          <li>
+            <a href="#hero" class="drawer-link">
+              <span class="drawer-num">01</span>
+              <span class="drawer-title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="drawer-link">
+              <span class="drawer-num">02</span>
+              <span class="drawer-title">About Us</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="drawer-link">
+              <span class="drawer-num">03</span>
+              <span class="drawer-title">Our Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="drawer-link">
+              <span class="drawer-num">04</span>
+              <span class="drawer-title">Contact & Inquiries</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="drawer-footer">
+        <div class="drawer-meta">
+          <span class="meta-label">HEADQUARTERS</span>
+          <p class="meta-val">Kolkata • West Bengal, India</p>
+        </div>
+        <div class="drawer-meta">
+          <span class="meta-label">DIRECT INQUIRIES</span>
+          <p class="meta-val"><a href="mailto:concierge@theguptas.design">concierge@theguptas.design</a></p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    
+    <!-- ====================================================================
+         SECTION 1: HERO SCREEN
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Image Layer from Cloudflare R2 -->
+      <div class="hero-bg-layer" style="background-image: url('https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-hero-bg.jpg');" role="img" aria-label="The Gupta's luxury estate landscape background"></div>
+      
+      <!-- Vignette & Contrast Overlays -->
+      <div class="hero-overlay"></div>
+
+      <!-- Main Lower-Third Hero Content -->
+      <div class="hero-content-wrap">
+        <div class="hero-content">
+          <!-- Subtitle / Category -->
+          <p class="hero-category">
+            <span>LANDSCAPE</span>
+            <span class="bullet">•</span>
+            <span>DESIGN</span>
+            <span class="bullet">•</span>
+            <span>DEVELOPMENT</span>
+          </p>
+
+          <!-- Main Headline -->
+          <h1 class="hero-headline">
+            <span class="line line-1">Nature,</span>
+            <span class="line line-2">thoughtfully</span>
+            <span class="line line-3">transformed.</span>
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            Creating better outdoor environments, naturally.
+          </p>
+
+          <!-- Call to Action Button -->
+          <div class="hero-actions">
+            <a href="#about" class="btn-explore" id="btn-explore">
+              <span class="btn-text">EXPLORE OUR WORK</span>
+              <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator at Bottom Center -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About section">
+        <div class="scroll-stem"></div>
+        <div class="scroll-point"></div>
+      </a>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: ABOUT US
+         ==================================================================== -->
+    <section class="about-section" id="about">
+      
+      <!-- Soft blurred decorative leaf shadows -->
+      <div class="leaf-shadow leaf-shadow-top" aria-hidden="true"></div>
+      <div class="leaf-shadow leaf-shadow-bottom" aria-hidden="true"></div>
+
+      <!-- Golden Botanical Line Art (Bottom Right SVG) -->
+      <div class="botanical-line-art" aria-hidden="true">
+        <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M220 220C180 180 120 160 50 170M220 220C170 140 100 100 20 90M220 220C210 150 180 80 130 30" stroke="#cca766" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+          <path d="M130 30C150 50 180 70 220 75M170 95C190 110 215 120 235 120M120 160C140 170 165 185 190 200" stroke="#cca766" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+          <path d="M50 170C80 165 110 140 140 110M20 90C45 95 75 80 100 60" stroke="#cca766" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+        </svg>
+      </div>
+
+      <div class="about-container">
+        
+        <!-- Main Top Split: Text on Left, Arch Image on Right -->
+        <div class="about-main-grid">
+          
+          <!-- Left Content Column -->
+          <div class="about-text-col">
+            <!-- Badge -->
+            <div class="about-badge">
+              <span class="badge-text">ABOUT US</span>
+              <span class="badge-line"></span>
+            </div>
+
+            <!-- Headline -->
+            <h2 class="about-headline">
+              <span class="headline-dark">Transforming</span>
+              <span class="headline-dark">Outdoor Spaces</span>
+              <span class="headline-gold">Since 5 Years</span>
+            </h2>
+
+            <!-- Paragraph Description -->
+            <p class="about-description">
+              The Gupta’s Landscape is a Kolkata-based landscaping and outdoor development company, creating distinctive, functional and visually refined outdoor environments for homes, businesses and institutions.
+            </p>
+
+            <!-- Call To Action Button -->
+            <div class="about-action">
+              <a href="#services" class="btn-story">
+                <span>OUR STORY</span>
+                <svg class="story-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Dual-Gold-Border Arch Image Showcase -->
+          <div class="about-visual-col">
+            <div class="arch-frame-outer">
+              <div class="arch-frame-inner">
+                <img 
+                  src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-about-garden.jpg" 
+                  alt="The Gupta's outdoor garden pathway with stone pavers, warm lighting, and tropical foliage" 
+                  class="arch-image"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Stats Row (3 Columns with hairline dividers) -->
+        <div class="about-stats-row">
+          
+          <!-- Stat 1: 5+ Years of Experience -->
+          <div class="stat-col">
+            <div class="stat-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 34C20 34 20 25 15 20C10 15 6 16 6 16C6 16 6 22 11 27C16 32 20 34 20 34Z" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 22C17 22 22 16 25 10C28 4 34 4 34 4C34 4 34 11 30 17C26 23 20 27 20 27" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 27L25 17" stroke="#c49e5d" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-value">5+</div>
+              <div class="stat-label">Years of<br>Experience</div>
+            </div>
+          </div>
+
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 2: Residential Commercial Institutional -->
+          <div class="stat-col">
+            <div class="stat-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" y="16" width="10" height="18" stroke="#c49e5d" stroke-width="1.6" stroke-linejoin="round"/>
+                <rect x="17" y="8" width="14" height="26" stroke="#c49e5d" stroke-width="1.6" stroke-linejoin="round"/>
+                <line x1="21" y1="13" x2="23" y2="13" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="27" y1="13" x2="27" y2="13" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="21" y1="18" x2="23" y2="18" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="27" y1="18" x2="27" y2="18" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="21" y1="23" x2="23" y2="23" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="27" y1="23" x2="27" y2="23" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="10" y1="20" x2="14" y2="20" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="10" y1="25" x2="14" y2="25" stroke="#c49e5d" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-categories">
+                <span>Residential</span>
+                <span>Commercial</span>
+                <span>Institutional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 3: Trusted by Leading Organizations -->
+          <div class="stat-col">
+            <div class="stat-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 18L7 23L13 29L18 24" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 18L33 23L27 29L22 24" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 15L20 19L24 15" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 20L20 26L26 20" stroke="#c49e5d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-trust">
+                <span>Trusted</span>
+                <span>by Leading</span>
+                <span>Organizations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: OUR SERVICES
+         ==================================================================== -->
+    <section class="services-section" id="services">
+      
+      <!-- Ambient Background Glow -->
+      <div class="services-bg-glow" aria-hidden="true"></div>
+
+      <div class="services-container">
+        
+        <!-- Header Split: Left Title & Paragraph, Right Core Pillars -->
+        <div class="services-header-split">
+          
+          <!-- Left Column -->
+          <div class="services-title-col">
+            <div class="services-badge">
+              <span class="badge-text">OUR SERVICES</span>
+              <span class="badge-line"></span>
+            </div>
+
+            <h2 class="services-headline">
+              <span class="line line-1">Complete</span>
+              <span class="line line-2">Landscaping</span>
+              <span class="line line-3">Solutions</span>
+            </h2>
+
+            <p class="services-tagline">
+              From design to maintenance, we create and care for outdoor spaces that inspire.
+            </p>
+
+            <div class="services-action">
+              <a href="#contact" class="btn-services">
+                <span>VIEW ALL SERVICES</span>
+                <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Stylized Leaf Icon & 3 Pillars -->
+          <div class="services-pillars-col">
+            <div class="pillar-divider" aria-hidden="true"></div>
+            
+            <div class="pillar-content">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 34V12M20 12C20 7 24 4 28 4C28 8 25 12 20 12ZM20 12C20 7 16 4 12 4C12 8 15 12 20 12Z" stroke="#cca766" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20C24 18 29 18 31 22C27 24 23 23 20 20Z" stroke="#cca766" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 20C16 18 11 18 9 22C13 24 17 23 20 20Z" stroke="#cca766" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 27C24 26 28 27 30 30C26 31 23 30 20 27Z" stroke="#cca766" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 27C16 26 12 27 10 30C14 31 17 30 20 27Z" stroke="#cca766" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <ul class="pillar-list">
+                <li>Thoughtful Design</li>
+                <li>Quality Execution</li>
+                <li>Lasting Green Spaces</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Service Cards Carousel / Horizontal Track -->
+        <div class="services-carousel-wrap">
+          <div class="services-track" id="services-track">
+            
+            <!-- Card 1: Landscape Design & Development -->
+            <article class="service-card" style="background-image: url('https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-service-1.jpg');">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-bottom">
+                <div class="service-card-info">
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cca766" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22v-8"/>
+                      <path d="M12 14c-3-2-6-1-7 2 2 1 5 1 7-2z"/>
+                      <path d="M12 14c3-2 6-1 7 2-2 1-5 1-7-2z"/>
+                      <path d="M12 9c-2-3-1-6 2-7 1 2 1 5-2 7z"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-card-title">Landscape<br>Design & Development</h3>
+                </div>
+                <button type="button" class="btn-card-arrow" aria-label="Explore Landscape Design & Development">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 2: Garden Development & Renovation -->
+            <article class="service-card" style="background-image: url('https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-service-2.jpg');">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-bottom">
+                <div class="service-card-info">
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cca766" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22V10"/>
+                      <path d="M12 10C9 8 5 9 4 12c3 1 6 0 8-2z"/>
+                      <path d="M12 10c3-2 7-1 8 2-3 1-6 0-8-2z"/>
+                      <path d="M12 6c-2-2-1-4 1-5 1 1 1 3-1 5z"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-card-title">Garden Development<br>& Renovation</h3>
+                </div>
+                <button type="button" class="btn-card-arrow" aria-label="Explore Garden Development & Renovation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 3: Pathways & Outdoor Features -->
+            <article class="service-card" style="background-image: url('https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-service-3.jpg');">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-bottom">
+                <div class="service-card-info">
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cca766" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="15" width="8" height="5" rx="1"/>
+                      <rect x="13" y="15" width="8" height="5" rx="1"/>
+                      <rect x="7" y="8" width="10" height="5" rx="1"/>
+                      <path d="M4 4h16"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-card-title">Pathways &<br>Outdoor Features</h3>
+                </div>
+                <button type="button" class="btn-card-arrow" aria-label="Explore Pathways & Outdoor Features">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 4: Nightscape Illumination & Irrigation -->
+            <article class="service-card" style="background-image: url('https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-about-garden.jpg');">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-bottom">
+                <div class="service-card-info">
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cca766" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="4"/>
+                      <line x1="12" y1="2" x2="12" y2="5"/>
+                      <line x1="12" y1="19" x2="12" y2="22"/>
+                      <line x1="2" y1="12" x2="5" y2="12"/>
+                      <line x1="19" y1="12" x2="22" y2="12"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-card-title">Nocturnal Lighting<br>& Irrigation</h3>
+                </div>
+                <button type="button" class="btn-card-arrow" aria-label="Explore Nocturnal Lighting & Irrigation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="services-nav-controls">
+          <button type="button" class="btn-nav-circle" id="btn-prev-service" aria-label="Previous service">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+
+          <div class="services-progress-track">
+            <div class="services-progress-bar" id="services-progress-bar"></div>
+          </div>
+
+          <button type="button" class="btn-nav-circle" id="btn-next-service" aria-label="Next service">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER (Bespoke Luxury Architecture & Landscape Footer)
+       ==================================================================== -->
+  <footer class="site-footer" id="contact">
+    
+    <!-- Top Pre-Footer Call to Action Banner -->
+    <div class="footer-cta-banner">
+      <div class="container footer-cta-container">
+        <div class="footer-cta-text">
+          <span class="footer-badge">INITIATE A CONVERSATION</span>
+          <h2 class="footer-cta-title">Ready to Transform Your Landscape?</h2>
+          <p class="footer-cta-subtitle">
+            From private estate gardens to commercial developments, let’s craft a living sanctuary that endures.
+          </p>
+        </div>
+        <div class="footer-cta-action">
+          <a href="mailto:concierge@theguptas.design" class="btn-footer-consult">
+            <span>REQUEST CONSULTATION</span>
+            <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="container footer-main-container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand & Ethos -->
+        <div class="footer-col footer-col-brand">
+          <a href="#hero" class="footer-brand-logo" aria-label="The Gupta's">
+            <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's" class="footer-logo-img" width="156">
+          </a>
+          <p class="footer-brand-desc">
+            Nature, thoughtfully transformed. Kolkata-based landscape architecture and outdoor development creating distinctive environments that inspire.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><circle cx="12" cy="12" r="7"></circle></svg>
+            </a>
+            <a href="https://wa.me/" class="social-icon" aria-label="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Core Services -->
+        <div class="footer-col">
+          <h3 class="footer-heading">SERVICES</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Landscape Design & Development</a></li>
+            <li><a href="#services">Garden Development & Renovation</a></li>
+            <li><a href="#services">Pathways & Outdoor Features</a></li>
+            <li><a href="#services">Water Features & Biotopes</a></li>
+            <li><a href="#services">Nocturnal Illumination</a></li>
+            <li><a href="#services">Horticultural Stewardship</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">NAVIGATION</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home Screen</a></li>
+            <li><a href="#about">About Our Firm</a></li>
+            <li><a href="#services">Landscaping Solutions</a></li>
+            <li><a href="#contact">Private Commission</a></li>
+            <li><a href="mailto:concierge@theguptas.design">Concierge Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Atelier Contacts & Hours -->
+        <div class="footer-col">
+          <h3 class="footer-heading">KOLKATA ATELIER</h3>
+          <div class="footer-contact-info">
+            <p class="contact-line">
+              <span class="contact-label">STUDIO</span>
+              <span>Kolkata, West Bengal, India</span>
+            </p>
+            <p class="contact-line">
+              <span class="contact-label">INQUIRIES</span>
+              <a href="mailto:concierge@theguptas.design">concierge@theguptas.design</a>
+            </p>
+            <p class="contact-line">
+              <span class="contact-label">DIRECT LINE</span>
+              <a href="tel:+919830000000">+91 (0) 98300 00000</a>
+            </p>
+            <p class="contact-line">
+              <span class="contact-label">STUDIO HOURS</span>
+              <span>Mon – Sat: 10:00 AM – 7:00 PM IST</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Sub-Footer Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 The Gupta's Landscape & Outdoor Development. All rights reserved.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Charter</a>
+          <span class="bullet">•</span>
+          <a href="#">Terms of Engagement</a>
+          <span class="bullet">•</span>
+          <a href="#hero" class="btn-back-to-top">
+            <span>Back to Top</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
