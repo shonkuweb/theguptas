@@ -21,9 +21,10 @@ docker compose up -d --build
 # 3. Verify Health Check
 echo "⏳ Verifying container health..."
 sleep 3
+PORT_TO_USE="${PORT:-8086}"
 if docker ps | grep -q theguptas-web; then
-    echo "✅ Container is running on port 8085!"
-    echo "🌐 Test locally on VPS: curl http://127.0.0.1:8085/health"
+    echo "✅ Container is running on port ${PORT_TO_USE}!"
+    echo "🌐 Test locally on VPS: curl http://127.0.0.1:${PORT_TO_USE}/health"
 else
     echo "❌ Container failed to start. Check logs: docker logs theguptas-web"
     exit 1
