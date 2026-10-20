@@ -1,10 +1,9 @@
 /**
- * THE GUPTA'S — Landscape • Design • Development
- * Interactive Script
+ * THE GUPTA'S LANDSCAPE — Interactive Architecture & UI Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Sticky Navbar On Scroll
+  // 1. Sticky Navbar On Scroll
   const siteHeader = document.getElementById('site-header');
   function handleHeaderScroll() {
     if (!siteHeader) return;
@@ -17,7 +16,36 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleHeaderScroll, { passive: true });
   handleHeaderScroll();
 
-  // 1. Mobile Navigation Drawer Controls
+  // 2. Active Section Spy for Desktop Navbar
+  const navLinks = document.querySelectorAll('.desktop-nav .nav-link');
+  const sections = document.querySelectorAll('section[id], header[id]');
+
+  if ('IntersectionObserver' in window && sections.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(sec => sectionObserver.observe(sec));
+  }
+
+  // 3. Mobile Navigation Drawer Controls
   const menuTrigger = document.getElementById('menu-trigger');
   const navDrawer = document.getElementById('nav-drawer');
   const navBackdrop = document.getElementById('nav-backdrop');
@@ -28,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!navDrawer) return;
     navDrawer.classList.add('open');
     navDrawer.setAttribute('aria-hidden', 'false');
-    menuTrigger.setAttribute('aria-expanded', 'true');
+    if (menuTrigger) menuTrigger.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
   }
 
@@ -36,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!navDrawer) return;
     navDrawer.classList.remove('open');
     navDrawer.setAttribute('aria-hidden', 'true');
-    menuTrigger.setAttribute('aria-expanded', 'false');
+    if (menuTrigger) menuTrigger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
 
@@ -56,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Services Carousel Navigation & Progress Bar
+  // 4. Services Carousel Navigation & Dynamic Progress Bar
   const servicesTrack = document.getElementById('services-track');
   const btnPrevService = document.getElementById('btn-prev-service');
   const btnNextService = document.getElementById('btn-next-service');
@@ -81,21 +109,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnNextService.addEventListener('click', () => {
       const card = servicesTrack.querySelector('.service-card');
-      const scrollAmount = card ? card.offsetWidth + 16 : 280;
+      const scrollAmount = card ? card.offsetWidth + 18 : 300;
       servicesTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 
     btnPrevService.addEventListener('click', () => {
       const card = servicesTrack.querySelector('.service-card');
-      const scrollAmount = card ? card.offsetWidth + 16 : 280;
+      const scrollAmount = card ? card.offsetWidth + 18 : 300;
       servicesTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
 
     // Initial progress bar calculation
     updateProgress();
+    window.addEventListener('resize', updateProgress);
   }
 
-  // 3. Subtle Desktop Parallax on Hero Image
+  // 5. Subtle Desktop Parallax on Hero Image
   const heroSection = document.getElementById('hero');
   const heroBg = document.querySelector('.hero-bg-layer');
 

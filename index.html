@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>The Gupta's | Landscape • Design • Development</title>
-  <meta name="description" content="Nature, thoughtfully transformed. Complete landscaping solutions from design to maintenance.">
+  <title>The Gupta's Landscape | Kolkata's Premier Outdoor & Landscape Architecture</title>
+  <meta name="description" content="The Gupta's Landscape — Kolkata-based professional landscaping and outdoor development company with 5 years of experience. Landscape design, garden development, pergolas, turf installation, and horticulture.">
   <meta name="theme-color" content="#070a07">
 
   <!-- Favicon using R2 logo -->
@@ -19,28 +19,58 @@
   <!-- Google Fonts: Cormorant Garamond, Montserrat & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Top Navigation Header -->
+  <!-- ====================================================================
+       TOP NAVIGATION HEADER (Precision Centered & Responsive)
+       ==================================================================== -->
   <header class="site-header" id="site-header">
     <div class="header-container">
-      <a href="#" class="brand-logo" aria-label="The Gupta's">
-        <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's" class="logo-img" width="160" height="72">
+      
+      <!-- Brand Logo (Perfect vertical balance) -->
+      <a href="#hero" class="brand-logo" aria-label="The Gupta's Landscape Home">
+        <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's Landscape" class="logo-img" width="168" height="74">
       </a>
 
-      <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-      </button>
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="desktop-nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#expertise" class="nav-link">Our Expertise</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#approach" class="nav-link">Our Approach</a></li>
+          <li><a href="#projects" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Direct WhatsApp & Mobile Drawer Trigger -->
+      <div class="header-actions">
+        <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20consult%20regarding%20a%20landscaping%20project." target="_blank" rel="noopener noreferrer" class="btn-header-wa" aria-label="Chat with The Gupta's on WhatsApp">
+          <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.08C8.94 7.08 8.63 7.15 8.37 7.43C8.11 7.71 7.38 8.4 7.38 9.79C7.38 11.18 8.39 12.52 8.53 12.71C8.67 12.9 10.51 15.74 13.34 16.96C14.01 17.25 14.53 17.42 14.94 17.55C15.62 17.77 16.23 17.74 16.72 17.67C17.27 17.59 18.4 16.99 18.63 16.33C18.87 15.67 18.87 15.11 18.8 14.99C18.73 14.87 18.54 14.81 18.26 14.67C17.97 14.53 16.58 13.85 16.32 13.76C16.06 13.67 15.87 13.62 15.68 13.9C15.5 14.18 14.97 14.81 14.81 15C14.65 15.19 14.5 15.21 14.21 15.07C13.93 14.93 13.02 14.63 11.94 13.67C11.1 12.92 10.53 12 10.37 11.72C10.21 11.44 10.35 11.29 10.49 11.15C10.62 11.02 10.78 10.81 10.92 10.65C11.06 10.49 11.11 10.37 11.2 10.18C11.3 10 11.25 9.84 11.18 9.7C11.11 9.56 10.55 8.18 10.31 7.62C10.09 7.07 9.86 7.15 9.69 7.14C9.53 7.14 9.34 7.08 9.13 7.08Z"/>
+          </svg>
+          <span class="btn-wa-text">8274926592</span>
+        </a>
+
+        <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
-  <!-- Mobile Slide-Out Drawer Navigation -->
+  <!-- ====================================================================
+       MOBILE SLIDE-OUT DRAWER NAVIGATION
+       ==================================================================== -->
   <aside class="nav-drawer" id="nav-drawer" aria-hidden="true">
     <div class="nav-drawer-backdrop" id="nav-backdrop"></div>
     <div class="nav-drawer-panel">
@@ -69,15 +99,33 @@
             </a>
           </li>
           <li>
-            <a href="#services" class="drawer-link">
+            <a href="#expertise" class="drawer-link">
               <span class="drawer-num">03</span>
+              <span class="drawer-title">Our Expertise</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="drawer-link">
+              <span class="drawer-num">04</span>
               <span class="drawer-title">Our Services</span>
             </a>
           </li>
           <li>
+            <a href="#approach" class="drawer-link">
+              <span class="drawer-num">05</span>
+              <span class="drawer-title">Our Approach</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="drawer-link">
+              <span class="drawer-num">06</span>
+              <span class="drawer-title">Project Experience</span>
+            </a>
+          </li>
+          <li>
             <a href="#contact" class="drawer-link">
-              <span class="drawer-num">04</span>
-              <span class="drawer-title">Contact & Inquiries</span>
+              <span class="drawer-num">07</span>
+              <span class="drawer-title">Contact & Consultation</span>
             </a>
           </li>
         </ul>
@@ -85,12 +133,16 @@
 
       <div class="drawer-footer">
         <div class="drawer-meta">
-          <span class="meta-label">HEADQUARTERS</span>
-          <p class="meta-val">Kolkata • West Bengal, India</p>
+          <span class="meta-label">DIRECT WHATSAPP INQUIRY</span>
+          <p class="meta-val">
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape" target="_blank" rel="noopener noreferrer" class="drawer-wa-link">
+              +91 8274926592
+            </a>
+          </p>
         </div>
         <div class="drawer-meta">
-          <span class="meta-label">DIRECT INQUIRIES</span>
-          <p class="meta-val"><a href="mailto:concierge@theguptas.design">concierge@theguptas.design</a></p>
+          <span class="meta-label">HEADQUARTERS</span>
+          <p class="meta-val">Kolkata • West Bengal, India</p>
         </div>
       </div>
     </div>
@@ -99,7 +151,7 @@
   <main id="main-content">
     
     <!-- ====================================================================
-         SECTION 1: HERO SCREEN
+         SECTION 1: HERO SCREEN (Full-Bleed Luxury Visual & Clear Positioning)
          ==================================================================== -->
     <section class="hero-section" id="hero">
       <!-- Background Image Layer from Cloudflare R2 -->
@@ -118,6 +170,8 @@
             <span>DESIGN</span>
             <span class="bullet">•</span>
             <span>DEVELOPMENT</span>
+            <span class="bullet">•</span>
+            <span class="hero-est">ESTD. KOLKATA</span>
           </p>
 
           <!-- Main Headline -->
@@ -132,13 +186,29 @@
             Creating better outdoor environments, naturally.
           </p>
 
-          <!-- Call to Action Button -->
+          <!-- Trust Badges Bar -->
+          <div class="hero-trust-strip">
+            <span class="trust-item"><strong class="gold-text">5+ Years</strong> of Excellence</span>
+            <span class="trust-dot">•</span>
+            <span class="trust-item">Command Hospital & Goenka Group Projects</span>
+            <span class="trust-dot">•</span>
+            <span class="trust-item">Residential & Commercial</span>
+          </div>
+
+          <!-- Call to Action Buttons -->
           <div class="hero-actions">
-            <a href="#about" class="btn-explore" id="btn-explore">
-              <span class="btn-text">EXPLORE OUR WORK</span>
+            <a href="#services" class="btn-explore" id="btn-explore">
+              <span class="btn-text">EXPLORE ALL SERVICES</span>
               <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
+            </a>
+
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20consult%20regarding%20my%20outdoor%20space." target="_blank" rel="noopener noreferrer" class="btn-hero-wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.08C8.94 7.08 8.63 7.15 8.37 7.43C8.11 7.71 7.38 8.4 7.38 9.79C7.38 11.18 8.39 12.52 8.53 12.71C8.67 12.9 10.51 15.74 13.34 16.96C14.01 17.25 14.53 17.42 14.94 17.55C15.62 17.77 16.23 17.74 16.72 17.67C17.27 17.59 18.4 16.99 18.63 16.33C18.87 15.67 18.87 15.11 18.8 14.99C18.73 14.87 18.54 14.81 18.26 14.67C17.97 14.53 16.58 13.85 16.32 13.76C16.06 13.67 15.87 13.62 15.68 13.9C15.5 14.18 14.97 14.81 14.81 15C14.65 15.19 14.5 15.21 14.21 15.07C13.93 14.93 13.02 14.63 11.94 13.67C11.1 12.92 10.53 12 10.37 11.72C10.21 11.44 10.35 11.29 10.49 11.15C10.62 11.02 10.78 10.81 10.92 10.65C11.06 10.49 11.11 10.37 11.2 10.18C11.3 10 11.25 9.84 11.18 9.7C11.11 9.56 10.55 8.18 10.31 7.62C10.09 7.07 9.86 7.15 9.69 7.14C9.53 7.14 9.34 7.08 9.13 7.08Z"/>
+              </svg>
+              <span>WHATSAPP CONSULTATION</span>
             </a>
           </div>
         </div>
@@ -152,7 +222,7 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 2: ABOUT US
+         SECTION 2: ABOUT US & OUR JOURNEY
          ==================================================================== -->
     <section class="about-section" id="about">
       
@@ -178,26 +248,31 @@
           <div class="about-text-col">
             <!-- Badge -->
             <div class="about-badge">
-              <span class="badge-text">ABOUT US</span>
+              <span class="badge-text">ABOUT THE GUPTA'S LANDSCAPE</span>
               <span class="badge-line"></span>
             </div>
 
             <!-- Headline -->
             <h2 class="about-headline">
-              <span class="headline-dark">Transforming</span>
-              <span class="headline-dark">Outdoor Spaces</span>
-              <span class="headline-gold">Since 5 Years</span>
+              <span class="headline-dark">Transforming Outdoor Spaces</span>
+              <span class="headline-gold">Through Design, Nature &amp; Craftsmanship</span>
             </h2>
 
             <!-- Paragraph Description -->
             <p class="about-description">
-              The Gupta’s Landscape is a Kolkata-based landscaping and outdoor development company, creating distinctive, functional and visually refined outdoor environments for homes, businesses and institutions.
+              The Gupta’s Landscape is a Kolkata-based professional landscaping and outdoor development company with <strong>5 years of experience</strong> in creating distinctive, functional, and visually refined outdoor environments.
+            </p>
+            <p class="about-description">
+              Our work brings together landscape design, natural elements, quality materials, skilled execution, and thoughtful detailing to transform open spaces into environments that enhance the character and usability of a property.
+            </p>
+            <p class="about-description">
+              From residential gardens and commercial landscapes to institutional and hospitality spaces, we provide comprehensive landscaping solutions tailored to the unique requirements of every site.
             </p>
 
             <!-- Call To Action Button -->
             <div class="about-action">
-              <a href="#services" class="btn-story">
-                <span>OUR STORY</span>
+              <a href="#expertise" class="btn-story">
+                <span>OUR EXPERTISE</span>
                 <svg class="story-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -235,7 +310,7 @@
             </div>
             <div class="stat-content">
               <div class="stat-value">5+</div>
-              <div class="stat-label">Years of<br>Experience</div>
+              <div class="stat-label">Years of<br>Excellence</div>
             </div>
           </div>
 
@@ -259,9 +334,9 @@
             </div>
             <div class="stat-content">
               <div class="stat-categories">
-                <span>Residential</span>
-                <span>Commercial</span>
-                <span>Institutional</span>
+                <span>Residential • Commercial</span>
+                <span>Institutional • Hospitality</span>
+                <span>Estates &amp; Parks</span>
               </div>
             </div>
           </div>
@@ -280,20 +355,180 @@
             </div>
             <div class="stat-content">
               <div class="stat-trust">
-                <span>Trusted</span>
-                <span>by Leading</span>
-                <span>Organizations</span>
+                <span>Trusted by</span>
+                <strong>Command Hospital</strong>
+                <span>&amp; Goenka Group Projects</span>
               </div>
             </div>
           </div>
 
         </div>
 
+        <!-- OUR JOURNEY Narrative Card -->
+        <div class="journey-card">
+          <div class="journey-header">
+            <div class="journey-badge">OUR JOURNEY</div>
+            <h3 class="journey-title">Five Years of Crafting Resilient, Elegant Landscapes</h3>
+          </div>
+          <div class="journey-grid">
+            <div class="journey-text-col">
+              <p>
+                With 5 years of experience in the landscaping and outdoor development sector, The Gupta’s Landscape has grown with a clear objective — to deliver reliable, creative, and professionally executed landscape solutions.
+              </p>
+            </div>
+            <div class="journey-text-col">
+              <p>
+                Over the years, we have developed capabilities across plantation, garden development, natural and artificial landscaping, outdoor structures, recreational spaces, hardscape works, and landscape enhancement.
+              </p>
+            </div>
+            <div class="journey-text-col">
+              <p>
+                Our experience across different project types has helped us develop a practical understanding of site conditions, materials, execution requirements, timelines, and client expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 3: OUR SERVICES
+         SECTION 3: OUR EXPERTISE (The 14 Core Solutions)
+         ==================================================================== -->
+    <section class="expertise-section" id="expertise">
+      <div class="expertise-container">
+        
+        <div class="section-center-head">
+          <div class="gold-badge-center">
+            <span class="badge-line"></span>
+            <span class="badge-text">COMPREHENSIVE CAPABILITIES</span>
+            <span class="badge-line"></span>
+          </div>
+          <h2 class="section-main-title">Our Expertise</h2>
+          <p class="section-sub-title">
+            Tailored outdoor development solutions combining horticultural mastery, structural engineering, and refined aesthetic detailing.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <!-- 1 -->
+          <div class="expertise-card">
+            <div class="expertise-num">01</div>
+            <div class="expertise-icon">🌿</div>
+            <h3 class="expertise-name">Landscape Development</h3>
+            <p class="expertise-desc">End-to-end master planning, terrain grading, and execution of comprehensive outdoor environments for estates and commercial spaces.</p>
+          </div>
+
+          <!-- 2 -->
+          <div class="expertise-card">
+            <div class="expertise-num">02</div>
+            <div class="expertise-icon">🌾</div>
+            <h3 class="expertise-name">Natural &amp; Artificial Grass</h3>
+            <p class="expertise-desc">Premium Bermuda, Korean &amp; Mexican natural turfing, alongside high-density UV-stabilized artificial grass for lawns and terraces.</p>
+          </div>
+
+          <!-- 3 -->
+          <div class="expertise-card">
+            <div class="expertise-num">03</div>
+            <div class="expertise-icon">🌱</div>
+            <h3 class="expertise-name">Plantation &amp; Garden Development</h3>
+            <p class="expertise-desc">Curated flora selection, tropical plant styling, soil enrichment, and artistic bed design tailored to regional climate conditions.</p>
+          </div>
+
+          <!-- 4 -->
+          <div class="expertise-card">
+            <div class="expertise-num">04</div>
+            <div class="expertise-icon">🍃</div>
+            <h3 class="expertise-name">Natural &amp; Artificial Vertical Gardens</h3>
+            <p class="expertise-desc">Living green walls with integrated drip irrigation, plus zero-maintenance bespoke bio-composite artificial vertical gardens.</p>
+          </div>
+
+          <!-- 5 -->
+          <div class="expertise-card">
+            <div class="expertise-num">05</div>
+            <div class="expertise-icon">🪵</div>
+            <h3 class="expertise-name">Pergolas &amp; Gazebos</h3>
+            <p class="expertise-desc">Custom-engineered wooden, steel, and WPC pergolas and poolside gazebos designed for luxury outdoor living and shading.</p>
+          </div>
+
+          <!-- 6 -->
+          <div class="expertise-card">
+            <div class="expertise-num">06</div>
+            <div class="expertise-icon">🚶</div>
+            <h3 class="expertise-name">Garden Pathways &amp; Outdoor Flooring</h3>
+            <p class="expertise-desc">Natural flagstones, granite cobblestones, marble chips, stamped concrete, and pebble walkways that elevate outdoor movement.</p>
+          </div>
+
+          <!-- 7 -->
+          <div class="expertise-card">
+            <div class="expertise-num">07</div>
+            <div class="expertise-icon">🏗️</div>
+            <h3 class="expertise-name">WPC &amp; Side Fencing</h3>
+            <p class="expertise-desc">Weatherproof wood-plastic composite boundary fencing, privacy louvers, and ornamental borders built to withstand all seasons.</p>
+          </div>
+
+          <!-- 8 -->
+          <div class="expertise-card">
+            <div class="expertise-num">08</div>
+            <div class="expertise-icon">⚽</div>
+            <h3 class="expertise-name">Turf &amp; Playground Development</h3>
+            <p class="expertise-desc">FIFA-standard multi-sport turfs, football arenas, school playgrounds, and safety-padded recreational surfaces.</p>
+          </div>
+
+          <!-- 9 -->
+          <div class="expertise-card">
+            <div class="expertise-num">09</div>
+            <div class="expertise-icon">⛲</div>
+            <h3 class="expertise-name">Water Fountains &amp; Water Features</h3>
+            <p class="expertise-desc">Serene koi ponds, cascading granite waterfalls, recirculating contemporary fountains, and reflective bio-pools.</p>
+          </div>
+
+          <!-- 10 -->
+          <div class="expertise-card">
+            <div class="expertise-num">10</div>
+            <div class="expertise-icon">🪑</div>
+            <h3 class="expertise-name">Garden Benches &amp; Outdoor Seating</h3>
+            <p class="expertise-desc">Architectural stone benches, ergonomic timber loungers, integrated fire-pit seatings, and conversation nooks.</p>
+          </div>
+
+          <!-- 11 -->
+          <div class="expertise-card">
+            <div class="expertise-num">11</div>
+            <div class="expertise-icon">🏡</div>
+            <h3 class="expertise-name">Glass Houses &amp; Garden Structures</h3>
+            <p class="expertise-desc">Sophisticated glass solariums, botanical conservatories, and sheltered pavilions that merge outdoor views with interior comfort.</p>
+          </div>
+
+          <!-- 12 -->
+          <div class="expertise-card">
+            <div class="expertise-num">12</div>
+            <div class="expertise-icon">🎪</div>
+            <h3 class="expertise-name">Swings &amp; Recreational Installations</h3>
+            <p class="expertise-desc">Suspended luxury hammocks, wrought-iron garden swings, and architectural play elements crafted for elegance and safety.</p>
+          </div>
+
+          <!-- 13 -->
+          <div class="expertise-card">
+            <div class="expertise-num">13</div>
+            <div class="expertise-icon">🏊</div>
+            <h3 class="expertise-name">Swimming Pool Landscaping</h3>
+            <p class="expertise-desc">Anti-slip poolside deckings, lush tropical perimeter screening, ambient lighting, and aquatic greenery curation.</p>
+          </div>
+
+          <!-- 14 -->
+          <div class="expertise-card">
+            <div class="expertise-num">14</div>
+            <div class="expertise-icon">🌺</div>
+            <h3 class="expertise-name">Landscape Maintenance &amp; Enhancement</h3>
+            <p class="expertise-desc">Scheduled horticultural stewardship, seasonal pruning, turf aeration, fertilization, and regular landscape beautification.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: OUR SERVICES (Flagship Showcase & Full 19-Service Directory)
          ==================================================================== -->
     <section class="services-section" id="services">
       
@@ -308,7 +543,7 @@
           <!-- Left Column -->
           <div class="services-title-col">
             <div class="services-badge">
-              <span class="badge-text">OUR SERVICES</span>
+              <span class="badge-text">THE GUPTA’S LANDSCAPING • OUR SERVICES</span>
               <span class="badge-line"></span>
             </div>
 
@@ -319,12 +554,12 @@
             </h2>
 
             <p class="services-tagline">
-              From design to maintenance, we create and care for outdoor spaces that inspire.
+              From design to maintenance, we create and care for outdoor spaces that inspire. Explore our full portfolio of services below.
             </p>
 
             <div class="services-action">
-              <a href="#contact" class="btn-services">
-                <span>VIEW ALL SERVICES</span>
+              <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20landscaping%20services." target="_blank" rel="noopener noreferrer" class="btn-services">
+                <span>GET A CUSTOM QUOTE</span>
                 <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -357,8 +592,13 @@
 
         </div>
 
-        <!-- Service Cards Carousel / Horizontal Track -->
+        <!-- Service Cards Carousel / Featured Flagship Highlights -->
         <div class="services-carousel-wrap">
+          <div class="carousel-label-strip">
+            <span class="carousel-tag">FLAGSHIP ARCHITECTURAL SHOWCASE</span>
+            <span class="carousel-hint">Swipe or use arrows to view highlights</span>
+          </div>
+
           <div class="services-track" id="services-track">
             
             <!-- Card 1: Landscape Design & Development -->
@@ -374,11 +614,11 @@
                       <path d="M12 9c-2-3-1-6 2-7 1 2 1 5-2 7z"/>
                     </svg>
                   </div>
-                  <h3 class="service-card-title">Landscape<br>Design & Development</h3>
+                  <h3 class="service-card-title">Landscape<br>Design &amp; Development</h3>
                 </div>
-                <button type="button" class="btn-card-arrow" aria-label="Explore Landscape Design & Development">
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I'm%20interested%20in%20Landscape%20Design%20%26%20Development" target="_blank" rel="noopener noreferrer" class="btn-card-arrow" aria-label="Inquire Landscape Design & Development">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
+                </a>
               </div>
             </article>
 
@@ -395,11 +635,11 @@
                       <path d="M12 6c-2-2-1-4 1-5 1 1 1 3-1 5z"/>
                     </svg>
                   </div>
-                  <h3 class="service-card-title">Garden Development<br>& Renovation</h3>
+                  <h3 class="service-card-title">Garden Development<br>&amp; Renovation</h3>
                 </div>
-                <button type="button" class="btn-card-arrow" aria-label="Explore Garden Development & Renovation">
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I'm%20interested%20in%20Garden%20Development%20%26%20Renovation" target="_blank" rel="noopener noreferrer" class="btn-card-arrow" aria-label="Inquire Garden Development & Renovation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
+                </a>
               </div>
             </article>
 
@@ -416,11 +656,11 @@
                       <path d="M4 4h16"/>
                     </svg>
                   </div>
-                  <h3 class="service-card-title">Pathways &<br>Outdoor Features</h3>
+                  <h3 class="service-card-title">Pergolas, Patios &amp;<br>Outdoor Seating</h3>
                 </div>
-                <button type="button" class="btn-card-arrow" aria-label="Explore Pathways & Outdoor Features">
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I'm%20interested%20in%20Pergolas%20and%20Outdoor%20Seating" target="_blank" rel="noopener noreferrer" class="btn-card-arrow" aria-label="Inquire Pergolas & Outdoor Features">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
+                </a>
               </div>
             </article>
 
@@ -438,11 +678,11 @@
                       <line x1="19" y1="12" x2="22" y2="12"/>
                     </svg>
                   </div>
-                  <h3 class="service-card-title">Nocturnal Lighting<br>& Irrigation</h3>
+                  <h3 class="service-card-title">Pathway Lighting &amp;<br>Irrigation Systems</h3>
                 </div>
-                <button type="button" class="btn-card-arrow" aria-label="Explore Nocturnal Lighting & Irrigation">
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I'm%20interested%20in%20Landscape%20Lighting%20%26%20Irrigation" target="_blank" rel="noopener noreferrer" class="btn-card-arrow" aria-label="Inquire Lighting & Irrigation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
+                </a>
               </div>
             </article>
 
@@ -464,6 +704,460 @@
           </button>
         </div>
 
+        <!-- ================================================================
+             COMPREHENSIVE 19-SERVICE DIRECTORY
+             ================================================================ -->
+        <div class="services-full-directory">
+          <div class="directory-header">
+            <div class="gold-badge-center">
+              <span class="badge-line"></span>
+              <span class="badge-text">FULL SERVICE CATALOGUE</span>
+              <span class="badge-line"></span>
+            </div>
+            <h3 class="directory-title">All 19 Landscaping &amp; Outdoor Solutions</h3>
+            <p class="directory-subtitle">Click any service to instantly inquire with our master landscapers on WhatsApp</p>
+          </div>
+
+          <div class="directory-grid">
+            
+            <!-- 1 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Landscape%20Design%20%26%20Development" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌿</span>
+              <div class="item-content">
+                <h4 class="item-title">Landscape Design &amp; Development</h4>
+                <p class="item-desc">Comprehensive master planning, terrain contouring, and artistic outdoor creation.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 2 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Garden%20Development%20%26%20Renovation" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌱</span>
+              <div class="item-content">
+                <h4 class="item-title">Garden Development &amp; Renovation</h4>
+                <p class="item-desc">Revitalizing existing gardens or engineering brand-new botanical sanctuaries.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 3 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Lawn%20Development%20%26%20Grass%20Installation" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🏡</span>
+              <div class="item-content">
+                <h4 class="item-title">Lawn Development &amp; Grass Installation</h4>
+                <p class="item-desc">Lush, green lawn rolling, leveling, soil preparation, and turf sodding.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 4 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Natural%20%26%20Artificial%20Grass%20/%20Turf%20Installation" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌾</span>
+              <div class="item-content">
+                <h4 class="item-title">Natural &amp; Artificial Grass / Turf Installation</h4>
+                <p class="item-desc">Highest grade natural grass varieties &amp; ultra-durable realistic artificial turfs.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 5 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Pebble%20Garden%20%26%20Pebble%20Stone%20Work" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🪨</span>
+              <div class="item-content">
+                <h4 class="item-title">Pebble Garden &amp; Pebble Stone Work</h4>
+                <p class="item-desc">Japanese Zen dry gardens, natural river pebbles, and stone border patterns.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 6 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Marble%20Chips%20%26%20Decorative%20Flooring" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🏞️</span>
+              <div class="item-content">
+                <h4 class="item-title">Marble Chips &amp; Decorative Flooring</h4>
+                <p class="item-desc">Dolomite white marble chips, onyx gravels, and artistic patterned groundscapes.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 7 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Plantation%20%26%20Horticulture%20Work" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌳</span>
+              <div class="item-content">
+                <h4 class="item-title">Plantation &amp; Horticulture Work</h4>
+                <p class="item-desc">Expert specimen tree transplants, exotic shrubs, and botanical cultivation.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 8 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Hedge%20%26%20Boundary%20Plantation" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌿</span>
+              <div class="item-content">
+                <h4 class="item-title">Hedge &amp; Boundary Plantation</h4>
+                <p class="item-desc">Natural privacy green screens, manicured boxwood borders, and perimeter living fences.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 9 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Pathway%20%26%20Landscape%20Lighting" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">💡</span>
+              <div class="item-content">
+                <h4 class="item-title">Pathway &amp; Landscape Lighting</h4>
+                <p class="item-desc">Architectural warm LED bollards, tree spotlights, and nocturnal ambience.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 10 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Pergola%20%26%20Outdoor%20Sitting%20Areas" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🪵</span>
+              <div class="item-content">
+                <h4 class="item-title">Pergola &amp; Outdoor Sitting Areas</h4>
+                <p class="item-desc">Custom luxury wooden &amp; metallic pergolas, gazebos, and shaded pavilions.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 11 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Garden%20Benches%20%26%20Seating%20Spaces" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🪑</span>
+              <div class="item-content">
+                <h4 class="item-title">Garden Benches &amp; Seating Spaces</h4>
+                <p class="item-desc">Carved stone benches, weather-treated teak loungers, and custom fire-pit seats.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 12 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Walkways%20%26%20Pathway%20Development" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🚶</span>
+              <div class="item-content">
+                <h4 class="item-title">Walkways &amp; Pathway Development</h4>
+                <p class="item-desc">Interlocking stone pavers, flagstone trails, and geometric garden stepping stones.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 13 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Indoor%20%26%20Outdoor%20Plant%20Styling" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌴</span>
+              <div class="item-content">
+                <h4 class="item-title">Indoor &amp; Outdoor Plant Styling</h4>
+                <p class="item-desc">Luxury planters, indoor air-purifying foliage, balcony and terrace green styling.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 14 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Hardscape%20%26%20Softscape%20Work" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🏗️</span>
+              <div class="item-content">
+                <h4 class="item-title">Hardscape &amp; Softscape Work</h4>
+                <p class="item-desc">Harmonious fusion of masonry, retaining walls, soil grading, and lush living plant beds.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 15 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Park%20Development%20%26%20Renovation" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🏞️</span>
+              <div class="item-content">
+                <h4 class="item-title">Park Development &amp; Renovation</h4>
+                <p class="item-desc">Municipal, institutional, and residential community park engineering and renewal.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 16 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Football%20/%20Sports%20Turf%20Development" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">⚽</span>
+              <div class="item-content">
+                <h4 class="item-title">Football / Sports Turf Development</h4>
+                <p class="item-desc">High-resilience sports arenas, cricket pitches, futsal turfs with shock-absorbing sub-bases.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 17 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Irrigation%20%26%20Garden%20Watering%20Systems" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">💧</span>
+              <div class="item-content">
+                <h4 class="item-title">Irrigation &amp; Garden Watering Systems</h4>
+                <p class="item-desc">Automated pop-up lawn sprinklers, micro-drip networks, and water conservation timers.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 18 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Garden%20Maintenance%20%26%20Grass%20Cutting" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">✂️</span>
+              <div class="item-content">
+                <h4 class="item-title">Garden Maintenance &amp; Grass Cutting</h4>
+                <p class="item-desc">Routine mowing, edging, shrub trimming, weed control, and meticulous lawn grooming.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+            <!-- 19 -->
+            <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's,%20I%20would%20like%20to%20inquire%20about%20Complete%20Landscape%20Maintenance" target="_blank" rel="noopener noreferrer" class="directory-item">
+              <span class="item-emoji">🌺</span>
+              <div class="item-content">
+                <h4 class="item-title">Complete Landscape Maintenance</h4>
+                <p class="item-desc">Full-service AMC contracts, soil aeration, disease management, and seasonal plant replenishment.</p>
+              </div>
+              <span class="item-link-arrow">→</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: OUR APPROACH & 4-STEP COMMITMENT
+         ==================================================================== -->
+    <section class="approach-section" id="approach">
+      <div class="approach-container">
+        
+        <div class="section-center-head">
+          <div class="gold-badge-center">
+            <span class="badge-line"></span>
+            <span class="badge-text">OUR PHILOSOPHY &amp; PROCESS</span>
+            <span class="badge-line"></span>
+          </div>
+          <h2 class="section-main-title">Our Approach</h2>
+          <p class="section-sub-title">
+            Every successful landscape begins with understanding the space.
+          </p>
+        </div>
+
+        <div class="approach-philosophy-card">
+          <p class="philosophy-quote">
+            "We consider the site, surroundings, intended use, budget, material requirements, maintenance needs, and client’s expectations before planning the execution. Our approach focuses on quality, functionality, attention to detail, professional supervision, and dependable project coordination."
+          </p>
+          <div class="philosophy-subtext">
+            We believe landscaping is more than simply adding plants or decorative elements. It is about creating a balanced environment where nature, architecture, design, and functionality work together.
+          </div>
+        </div>
+
+        <!-- The 4 Commitments -->
+        <div class="commitments-header">
+          <h3 class="commitments-heading">Our Commitment</h3>
+          <p class="commitments-lead">At The Gupta’s Landscape, we understand that every project represents our client’s investment, vision, and expectations. Our commitment is simple:</p>
+        </div>
+
+        <div class="commitments-grid">
+          
+          <div class="commitment-card">
+            <div class="step-num">01</div>
+            <h4 class="step-title">Understand the Vision</h4>
+            <p class="step-desc">Deep listening to your aesthetic aspirations, lifestyle, site topography, and microclimate demands.</p>
+          </div>
+
+          <div class="commitment-card">
+            <div class="step-num">02</div>
+            <h4 class="step-title">Plan the Space</h4>
+            <p class="step-desc">Engineering balanced layouts where flora, hardscaping, light, and movement harmonize effortlessly.</p>
+          </div>
+
+          <div class="commitment-card">
+            <div class="step-num">03</div>
+            <h4 class="step-title">Execute with Precision</h4>
+            <p class="step-desc">Rigorous on-site supervision, premium materials, master horticulture, and transparent coordination.</p>
+          </div>
+
+          <div class="commitment-card">
+            <div class="step-num">04</div>
+            <h4 class="step-title">Create Something That Lasts</h4>
+            <p class="step-desc">Crafting sustainable, enduring outdoor environments that grow more magnificent year after year.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 6: PROJECT EXPERIENCE (Prestigious Clients in Kolkata)
+         ==================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="projects-container">
+        
+        <div class="projects-header-split">
+          <div class="projects-left">
+            <div class="gold-badge">
+              <span class="badge-text">PROVEN TRACK RECORD</span>
+              <span class="badge-line"></span>
+            </div>
+            <h2 class="section-main-title">Project Experience</h2>
+            <p class="projects-lead">
+              Over the past 5 years, we have worked across different types of landscaping and outdoor development projects, including residential, commercial, institutional, and hospitality environments.
+            </p>
+          </div>
+
+          <div class="projects-right">
+            <div class="client-highlight-box">
+              <span class="box-label">NOTABLE ASSOCIATIONS</span>
+              <div class="client-names">
+                <span class="client-pill">Command Hospital</span>
+                <span class="client-pill">Goenka Group Projects</span>
+                <span class="client-pill">Private Luxury Estates</span>
+                <span class="client-pill">Kolkata Commercial Hubs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-card-grid">
+          
+          <div class="project-card">
+            <div class="project-card-num">01 / INSTITUTIONAL</div>
+            <h3 class="project-card-title">Command Hospital, Kolkata</h3>
+            <p class="project-card-desc">Comprehensive landscape development, serene healing garden spaces, robust lawn sodding, and boundary hedge plantations designed for longevity and calm.</p>
+            <div class="project-tags">
+              <span>Horticulture</span>
+              <span>Lawn Development</span>
+              <span>Irrigation</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-num">02 / CORPORATE &amp; REALTY</div>
+            <h3 class="project-card-title">Goenka Group Projects</h3>
+            <p class="project-card-desc">Outdoor environment enhancement, premium marble chip paving, decorative plant styling, and manicured commercial landscapes reflecting corporate prestige.</p>
+            <div class="project-tags">
+              <span>Hardscaping</span>
+              <span>Plant Styling</span>
+              <span>Decorative Flooring</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-num">03 / RESIDENTIAL ESTATES</div>
+            <h3 class="project-card-title">Private Villas &amp; Luxury Residences</h3>
+            <p class="project-card-desc">Bespoke pergolas, pebble Zen gardens, swimming pool landscaping, and automated drip irrigation for private estate owners across Kolkata.</p>
+            <div class="project-tags">
+              <span>Pergolas</span>
+              <span>Pebble Gardens</span>
+              <span>Pool Landscaping</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-num">04 / RECREATIONAL &amp; SPORTS</div>
+            <h3 class="project-card-title">Turf &amp; Community Parks</h3>
+            <p class="project-card-desc">All-weather football turfs, community park renovations, children's play surfaces, and architectural outdoor seating installations.</p>
+            <div class="project-tags">
+              <span>Sports Turf</span>
+              <span>Park Renovation</span>
+              <span>Outdoor Seating</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 7: OUR VISION (Editorial Statement)
+         ==================================================================== -->
+    <section class="vision-section">
+      <div class="vision-container">
+        <div class="vision-box">
+          <div class="vision-badge">OUR VISION</div>
+          <blockquote class="vision-quote">
+            "Our vision is to establish The Gupta’s Landscape as a trusted and professionally driven landscaping company, recognized for quality execution, creative outdoor solutions, transparent communication, and dependable project management. We aim to create landscapes that go beyond visual appeal — spaces that are functional, welcoming, sustainable, and built to last."
+          </blockquote>
+          <div class="vision-author">
+            <strong>The Gupta’s Landscape</strong>
+            <span>Landscaping • Outdoor Development • Garden Solutions • Green Spaces</span>
+            <p class="vision-submotto">Creating Better Outdoor Environments, Naturally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 8: DIRECT CONSULTATION & WHATSAPP HUB
+         ==================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        
+        <div class="contact-card-main">
+          
+          <div class="contact-left">
+            <div class="gold-badge">
+              <span class="badge-text">START YOUR PROJECT</span>
+              <span class="badge-line"></span>
+            </div>
+            <h2 class="contact-title">Let’s Transform Your Outdoor Space</h2>
+            <p class="contact-desc">
+              Whether you are planning a private villa garden, a commercial landscape development, or need professional garden maintenance in Kolkata — we are ready to assist you.
+            </p>
+
+            <div class="contact-methods">
+              <div class="method-item">
+                <span class="method-label">OFFICIAL WHATSAPP</span>
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20consult%20regarding%20a%20landscaping%20project." target="_blank" rel="noopener noreferrer" class="method-val method-wa">
+                  <strong>+91 8274926592</strong>
+                  <span class="pill-active">Online • Instant Reply</span>
+                </a>
+              </div>
+
+              <div class="method-item">
+                <span class="method-label">DIRECT CALL</span>
+                <a href="tel:+918274926592" class="method-val">
+                  +91 8274926592
+                </a>
+              </div>
+
+              <div class="method-item">
+                <span class="method-label">LOCATION &amp; SERVICE AREA</span>
+                <p class="method-val-text">
+                  Kolkata &amp; Greater Bengal Region, India
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <div class="wa-action-box">
+              <h3 class="wa-box-title">Instant WhatsApp Consultation</h3>
+              <p class="wa-box-desc">Choose a service below to initiate a pre-filled discussion with our landscape architect:</p>
+              
+              <div class="quick-inquiry-buttons">
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'm%20interested%20in%20Landscape%20Design%20%26%20Development." target="_blank" rel="noopener noreferrer" class="btn-quick-inquiry">
+                  🌿 Landscape Design &amp; Development
+                </a>
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'm%20interested%20in%20Natural%20or%20Artificial%20Grass%20Installation." target="_blank" rel="noopener noreferrer" class="btn-quick-inquiry">
+                  🌾 Grass / Turf Installation
+                </a>
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'm%20interested%20in%20Pergolas,%20Patios%20%26%20Outdoor%20Seating." target="_blank" rel="noopener noreferrer" class="btn-quick-inquiry">
+                  🪵 Pergola &amp; Outdoor Living
+                </a>
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'm%20interested%20in%20Pebble%20Gardens%20%26%20Marble%20Chips%20Flooring." target="_blank" rel="noopener noreferrer" class="btn-quick-inquiry">
+                  🪨 Pebble Garden &amp; Stone Work
+                </a>
+                <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'm%20interested%20in%20Complete%20Landscape%20Maintenance." target="_blank" rel="noopener noreferrer" class="btn-quick-inquiry">
+                  ✂️ Complete Maintenance &amp; Care
+                </a>
+              </div>
+
+              <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20discuss%20a%20custom%20outdoor%20project." target="_blank" rel="noopener noreferrer" class="btn-direct-chat">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.08C8.94 7.08 8.63 7.15 8.37 7.43C8.11 7.71 7.38 8.4 7.38 9.79C7.38 11.18 8.39 12.52 8.53 12.71C8.67 12.9 10.51 15.74 13.34 16.96C14.01 17.25 14.53 17.42 14.94 17.55C15.62 17.77 16.23 17.74 16.72 17.67C17.27 17.59 18.4 16.99 18.63 16.33C18.87 15.67 18.87 15.11 18.8 14.99C18.73 14.87 18.54 14.81 18.26 14.67C17.97 14.53 16.58 13.85 16.32 13.76C16.06 13.67 15.87 13.62 15.68 13.9C15.5 14.18 14.97 14.81 14.81 15C14.65 15.19 14.5 15.21 14.21 15.07C13.93 14.93 13.02 14.63 11.94 13.67C11.1 12.92 10.53 12 10.37 11.72C10.21 11.44 10.35 11.29 10.49 11.15C10.62 11.02 10.78 10.81 10.92 10.65C11.06 10.49 11.11 10.37 11.2 10.18C11.3 10 11.25 9.84 11.18 9.7C11.11 9.56 10.55 8.18 10.31 7.62C10.09 7.07 9.86 7.15 9.69 7.14C9.53 7.14 9.34 7.08 9.13 7.08Z"/>
+                </svg>
+                <span>OPEN DIRECT WHATSAPP CHAT</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -472,7 +1166,7 @@
   <!-- ====================================================================
        FOOTER (Bespoke Luxury Architecture & Landscape Footer)
        ==================================================================== -->
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer">
     
     <!-- Top Pre-Footer Call to Action Banner -->
     <div class="footer-cta-banner">
@@ -481,12 +1175,12 @@
           <span class="footer-badge">INITIATE A CONVERSATION</span>
           <h2 class="footer-cta-title">Ready to Transform Your Landscape?</h2>
           <p class="footer-cta-subtitle">
-            From private estate gardens to commercial developments, let’s craft a living sanctuary that endures.
+            From private estate gardens to commercial and institutional developments in Kolkata, let’s craft a living sanctuary that endures.
           </p>
         </div>
         <div class="footer-cta-action">
-          <a href="mailto:concierge@theguptas.design" class="btn-footer-consult">
-            <span>REQUEST CONSULTATION</span>
+          <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I'd%20like%20to%20request%20a%20site%20consultation." target="_blank" rel="noopener noreferrer" class="btn-footer-consult">
+            <span>CONSULT VIA WHATSAPP (8274926592)</span>
             <svg class="btn-arrow" width="18" height="12" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M1 7H20M20 7L14.5 1.5M20 7L14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -501,50 +1195,42 @@
         
         <!-- Column 1: Brand & Ethos -->
         <div class="footer-col footer-col-brand">
-          <a href="#hero" class="footer-brand-logo" aria-label="The Gupta's">
-            <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's" class="footer-logo-img" width="156">
+          <a href="#hero" class="footer-brand-logo" aria-label="The Gupta's Landscape Home">
+            <img src="https://pub-ce8688bc6c654bcfb99716f7c9373bcd.r2.dev/the-guptas-logo.png" alt="The Gupta's Landscape" class="footer-logo-img" width="156">
           </a>
           <p class="footer-brand-desc">
-            Nature, thoughtfully transformed. Kolkata-based landscape architecture and outdoor development creating distinctive environments that inspire.
+            The Gupta’s Landscape — Transforming outdoor spaces through design, nature &amp; craftsmanship. Kolkata-based landscaping and outdoor development with 5 years of proven excellence.
           </p>
-          <div class="footer-social-links">
-            <a href="#" class="social-icon" aria-label="Instagram">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Pinterest">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><circle cx="12" cy="12" r="7"></circle></svg>
-            </a>
-            <a href="https://wa.me/" class="social-icon" aria-label="WhatsApp">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            </a>
+          <div class="footer-brand-tags">
+            Landscaping • Outdoor Development • Garden Solutions • Green Spaces
           </div>
         </div>
 
         <!-- Column 2: Core Services -->
         <div class="footer-col">
-          <h3 class="footer-heading">SERVICES</h3>
+          <h3 class="footer-heading">OUR SERVICES</h3>
           <ul class="footer-links">
-            <li><a href="#services">Landscape Design & Development</a></li>
-            <li><a href="#services">Garden Development & Renovation</a></li>
-            <li><a href="#services">Pathways & Outdoor Features</a></li>
-            <li><a href="#services">Water Features & Biotopes</a></li>
-            <li><a href="#services">Nocturnal Illumination</a></li>
-            <li><a href="#services">Horticultural Stewardship</a></li>
+            <li><a href="#services">Landscape Design &amp; Development</a></li>
+            <li><a href="#services">Garden Development &amp; Renovation</a></li>
+            <li><a href="#services">Natural &amp; Artificial Grass / Turf</a></li>
+            <li><a href="#services">Pebble Garden &amp; Marble Chips</a></li>
+            <li><a href="#services">Pergolas &amp; Outdoor Sitting Areas</a></li>
+            <li><a href="#services">Lighting &amp; Automated Irrigation</a></li>
+            <li><a href="#services">Complete Landscape Maintenance</a></li>
           </ul>
         </div>
 
         <!-- Column 3: Navigation -->
         <div class="footer-col">
-          <h3 class="footer-heading">NAVIGATION</h3>
+          <h3 class="footer-heading">EXPLORE</h3>
           <ul class="footer-links">
             <li><a href="#hero">Home Screen</a></li>
             <li><a href="#about">About Our Firm</a></li>
-            <li><a href="#services">Landscaping Solutions</a></li>
-            <li><a href="#contact">Private Commission</a></li>
-            <li><a href="mailto:concierge@theguptas.design">Concierge Desk</a></li>
+            <li><a href="#expertise">14 Core Capabilities</a></li>
+            <li><a href="#services">19-Service Directory</a></li>
+            <li><a href="#approach">Our 4-Step Commitment</a></li>
+            <li><a href="#projects">Command Hospital &amp; Goenka Group</a></li>
+            <li><a href="#contact">Consultation Hub</a></li>
           </ul>
         </div>
 
@@ -553,20 +1239,20 @@
           <h3 class="footer-heading">KOLKATA ATELIER</h3>
           <div class="footer-contact-info">
             <p class="contact-line">
-              <span class="contact-label">STUDIO</span>
+              <span class="contact-label">STUDIO &amp; OPERATIONS</span>
               <span>Kolkata, West Bengal, India</span>
             </p>
             <p class="contact-line">
-              <span class="contact-label">INQUIRIES</span>
-              <a href="mailto:concierge@theguptas.design">concierge@theguptas.design</a>
+              <span class="contact-label">WHATSAPP &amp; PHONE</span>
+              <a href="https://wa.me/918274926592" target="_blank" rel="noopener noreferrer">+91 8274926592</a>
             </p>
             <p class="contact-line">
-              <span class="contact-label">DIRECT LINE</span>
-              <a href="tel:+919830000000">+91 (0) 98300 00000</a>
+              <span class="contact-label">CLIENT SUPERVISION</span>
+              <span>Residential • Commercial • Institutional</span>
             </p>
             <p class="contact-line">
-              <span class="contact-label">STUDIO HOURS</span>
-              <span>Mon – Sat: 10:00 AM – 7:00 PM IST</span>
+              <span class="contact-label">OPERATING HOURS</span>
+              <span>Mon – Sat: 9:00 AM – 7:30 PM IST</span>
             </p>
           </div>
         </div>
@@ -576,12 +1262,12 @@
       <!-- Bottom Sub-Footer Bar -->
       <div class="footer-bottom-bar">
         <p class="copyright-text">
-          &copy; 2026 The Gupta's Landscape & Outdoor Development. All rights reserved.
+          &copy; 2026 The Gupta's Landscape. All rights reserved. Creating better outdoor environments, naturally.
         </p>
         <div class="footer-legal-links">
-          <a href="#">Privacy Charter</a>
+          <span>Kolkata, India</span>
           <span class="bullet">•</span>
-          <a href="#">Terms of Engagement</a>
+          <a href="https://wa.me/918274926592" target="_blank" rel="noopener noreferrer">WhatsApp: 8274926592</a>
           <span class="bullet">•</span>
           <a href="#hero" class="btn-back-to-top">
             <span>Back to Top</span>
@@ -591,6 +1277,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- ====================================================================
+       FLOATING LUXURY WHATSAPP BUTTON (Persistent Bottom-Right)
+       ==================================================================== -->
+  <a href="https://wa.me/918274926592?text=Hello%20The%20Gupta's%20Landscape,%20I%20would%20like%20to%20inquire%20about%20a%20landscaping%20project." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Chat on WhatsApp">
+    <div class="floating-wa-pulse"></div>
+    <div class="floating-wa-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.13 7.08C8.94 7.08 8.63 7.15 8.37 7.43C8.11 7.71 7.38 8.4 7.38 9.79C7.38 11.18 8.39 12.52 8.53 12.71C8.67 12.9 10.51 15.74 13.34 16.96C14.01 17.25 14.53 17.42 14.94 17.55C15.62 17.77 16.23 17.74 16.72 17.67C17.27 17.59 18.4 16.99 18.63 16.33C18.87 15.67 18.87 15.11 18.8 14.99C18.73 14.87 18.54 14.81 18.26 14.67C17.97 14.53 16.58 13.85 16.32 13.76C16.06 13.67 15.87 13.62 15.68 13.9C15.5 14.18 14.97 14.81 14.81 15C14.65 15.19 14.5 15.21 14.21 15.07C13.93 14.93 13.02 14.63 11.94 13.67C11.1 12.92 10.53 12 10.37 11.72C10.21 11.44 10.35 11.29 10.49 11.15C10.62 11.02 10.78 10.81 10.92 10.65C11.06 10.49 11.11 10.37 11.2 10.18C11.3 10 11.25 9.84 11.18 9.7C11.11 9.56 10.55 8.18 10.31 7.62C10.09 7.07 9.86 7.15 9.69 7.14C9.53 7.14 9.34 7.08 9.13 7.08Z"/>
+      </svg>
+    </div>
+    <span class="floating-wa-label">WhatsApp: 8274926592</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
